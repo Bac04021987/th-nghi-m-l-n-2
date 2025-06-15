@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Agent Demo</title>
+</head>
+<body>
+    <h2>Hỏi gì đó với AI:</h2>
+    <form method="post">
+        <input name="message" style="width: 300px;" placeholder="Nhập câu hỏi..." required>
+        <button type="submit">Gửi</button>
+    </form>
+    {% if reply %}
+        <h3>Phản hồi từ AI:</h3>
+        <p>{{ reply }}</p>
+    {% endif %}
+</body>
+</html>
